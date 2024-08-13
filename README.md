@@ -20,7 +20,17 @@ Imagine needing to quickly get the recipe from a long cooking video. Instead of 
 ## Implementation
 The app processes a given YouTube URL to extract the video ID, fetches the transcript using the YouTube Transcript API, and generates a summary using a predefined prompt with Google Gemini. The resulting summary is displayed in a clean, readable format within the app.
 
+## Current Limitations
+- **Non-Specific URL Handling**: The app does not currently differentiate between cooking and non-cooking videos. As a result, summaries may be generated for any type of video, which might not be relevant if the content is unrelated to cooking.
+  
+## Planned Improvements and Next Steps
+1. **Content Validation**: Implement a content validation mechanism to ensure that only cooking-related videos are processed. This could involve analyzing video metadata, titles, descriptions, or transcript content to confirm relevance.
+
+2. **Multi-Domain Support**: Explore expanding the app’s capabilities to handle different types of video content beyond cooking, such as educational videos or tutorials, with customized prompts for each domain.
+
+3. **User Feedback Integration**: Introduce a feedback loop where users can indicate if a summary is relevant or suggest improvements, allowing the app to learn and adapt over time.
+
 ## Conclusion
-This project demonstrates practical applications of generative AI and web development skills, showcasing an innovative approach to content summarization that can be extended to various domains.
+This project represents a starting point for developing an effective tool to summarize cooking tutorials into concise recipes. However, it is acknowledged that the current version is not optimized for cooking videos specifically, and future enhancements will focus on addressing this limitation.
 
 ---
